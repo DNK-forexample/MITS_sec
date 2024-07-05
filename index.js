@@ -58,3 +58,16 @@ console.log(VCilindra);
 let r = 5;
 let SKruga = Math.PI * Math.pow(r, 2);
 console.log(SKruga);
+
+/* Найдите площадь трапеции (STrap) с основаниями 5см (a) и 7см (b), и высотой 10см
+(h).  */
+//S = (a + b) * h / 2
+{
+  let STrap;
+  let a = 5;
+  let b = 7;
+  let h = 10;
+  STrap = (a + b) * h / 2;
+  console.log(STrap);
+}
+
