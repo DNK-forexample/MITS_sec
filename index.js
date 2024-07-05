@@ -52,3 +52,9 @@ let HCilindra = 10;
 let DCilindra = a7;
 let VCilindra = Math.PI * Math.pow((DCilindra / 2), 2) * HCilindra;
 console.log(VCilindra);
+
+/*Найдите площадь круга (SKruga) с радиусом 5см (r). 
+ */
+let r = 5;
+let SKruga = Math.PI * Math.pow(r, 2);
+console.log(SKruga);
