@@ -103,18 +103,39 @@
 «4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57».
 Найдите самое большое и самое маленькое число в строке, используя цикл. */
 
+// {
+//   let str = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
+//   let max = 0;
+//   let min = 0;
+//   let numbArr = str.split(' ').map(el => +el);
+//   for (let i = 0; i <= numbArr.length; i++) {
+//  if (numbArr[i] > max) {
+//    min = max;
+//    max = numbArr[i];
+//  } if (numbArr[i] < min) {
+//    min = numbArr[i];
+//  }
+// }
+//   console.log(min, max)
+// }
+
+/*10. Дано произвольное целое число n. Написать программу, которая:
+a. разбивает число n на цифры и выводит их на экран;
+b. подсчитывает сколько цифр в числе n;
+c. находит сумму цифр числа n;
+d. меняет порядок цифр числа n на обратный. */
+
 {
-  let str = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
-  let max = 0;
-  let min = 0;
-  let numbArr = str.split(' ').map(el => +el);
-  for (let i = 0; i <= numbArr.length; i++) {
- if (numbArr[i] > max) {
-   min = max;
-   max = numbArr[i];
- } if (numbArr[i] < min) {
-   min = numbArr[i];
- }
-}
-  console.log(min, max)
+  let n = '785';
+  let count = 0;
+  let sum = 0;
+  let arr = [];
+  for (let i = 0; i < n.length; i++) {
+    console.log(+n[i]); //разбивает число n на цифры и выводит их на экран;
+    count++; //подсчитывает сколько цифр в числе n;
+    sum += +n[i]; //находит сумму цифр числа n;
+    arr.unshift(+n[i]);
+  }
+  let reversed = arr.join('');//меняет порядок цифр числа n на обратный. */
+  console.log(count, sum, reversed);
 }
