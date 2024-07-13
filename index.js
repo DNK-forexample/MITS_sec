@@ -1,42 +1,42 @@
 /*2 Выведите столбец чисел от 89 до 11 - воспользуйтесь циклом while и отделите числа
 тегом <br /> друг от друга, чтобы получить столбец, а не строку.
  */
-// {
-//   let i = 89;
-// while (i >= 11) {
-//   document.write(i + `<br>`);
-//   i--;
-// }
+{
+  let i = 89;
+while (i >= 11) {
+  document.write(i + `<br>`);
+  i--;
+}
 
-// }
+}
 
 /*4. Найдите сумму чисел в каждом числе от 1 до 5, например: в числе 3 сумма составляет 6
 (1+2+3).
  */
-// {
-// let i = 1;
-// let sum = 1;
-// while (i <= 5) {
-//   i++;
-//   sum += i;
-//   console.log(sum);
-// }
-// }
+{
+let i = 1;
+let sum = 1;
+while (i <= 5) {
+  i++;
+  sum += i;
+  console.log(sum);
+}
+}
 
 /*5. Выведите чётные числа от 8 до 56. Решить задание через while и for. */
-// {
-//   for (let i = 8; i <= 56; i+=2) {
-//     console.log(i);
-//   }
-// }
-// {
-//   let i = 6;
-//   while(i <= 56) {
-//     i += 2;
-//      console.log(i);
-//   }
+{
+  for (let i = 8; i <= 56; i+=2) {
+    console.log(i);
+  }
+}
+{
+  let i = 6;
+  while(i <= 56) {
+    i += 2;
+     console.log(i);
+  }
 
-// }
+}
 
 /*6. Необходимо вывести на экран полную таблицу умножения (от 2 до 10) в виде:
 2*2 = 4
@@ -51,29 +51,29 @@
 …
 Для решения задачи используйте вложенные циклы. */
 
-// {
-//   for (let i = 2; i <= 10; i++) {
-//     document.write(`this is i ${i}<br>`);
-//     for (let j = 1; j <= 10; j++) {
-//       document.write(`${i} * ${j} = ${i * j} <br>`);
-//     }
-//   }
-// }
+{
+  for (let i = 2; i <= 10; i++) {
+    document.write(`this is i ${i}<br>`);
+    for (let j = 1; j <= 10; j++) {
+      document.write(`${i} * ${j} = ${i * j} <br>`);
+    }
+  }
+}
 
 /*7. Дано число n=1000. Делите его на 2 столько раз, пока результат деления не станет
 меньше 50. Какое число получится? Посчитайте количество итераций, необходимых
 для этого (итерация - это проход цикла), и запишите его в переменную num. */
 
-// {
-//   let n = 1000;
-//   let num = 0;
-//   while (n > 50) {
-//     num++;
-//     n = n / 2;
-//     console.log(n);
-//   }
-//   console.log(num);
-// }
+{
+  let n = 1000;
+  let num = 0;
+  while (n > 50) {
+    num++;
+    n = n / 2;
+    console.log(n);
+  }
+  console.log(num);
+}
 
 
 /*8. Запустите цикл, в котором пользователю предлагается вводить число с клавиатуры, до
@@ -81,43 +81,43 @@
 общую сумму и среднее арифметическое введённых чисел. Если пользователь ввел не
 число, то вывести сообщение об ошибке */
 
-// {
-//   let symbol = +prompt("Введите число (кроме 0)");
-//   let sum = 0;
-//   let count = 0;
-//   if (isNaN(symbol) || symbol === 0) {
-//     alert("Ошибка!")
-//   }
-//   while (typeof symbol == "number" && symbol !== 0 && !isNaN(symbol)) {   
-//     sum += symbol;
-//     // console.log(symbol)
-//     symbol = +prompt("Введите число (кроме 0)");
-//      count++;
-//     // console.log(count);
-//   }
-//   let average = sum / count;
-//   console.log(sum, average);
-// }
+{
+  let symbol = +prompt("Введите число (кроме 0)");
+  let sum = 0;
+  let count = 0;
+  if (isNaN(symbol) || symbol === 0) {
+    alert("Ошибка!")
+  }
+  while (typeof symbol == "number" && symbol !== 0 && !isNaN(symbol)) {   
+    sum += symbol;
+    // console.log(symbol)
+    symbol = +prompt("Введите число (кроме 0)");
+     count++;
+    // console.log(count);
+  }
+  let average = sum / count;
+  console.log(sum, average);
+}
 
 /*9. Дана строка с числами разделенными пробелами 
 «4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57».
 Найдите самое большое и самое маленькое число в строке, используя цикл. */
 
-// {
-//   let str = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
-//   let max = 0;
-//   let min = 0;
-//   let numbArr = str.split(' ').map(el => +el);
-//   for (let i = 0; i <= numbArr.length; i++) {
-//  if (numbArr[i] > max) {
-//    min = max;
-//    max = numbArr[i];
-//  } if (numbArr[i] < min) {
-//    min = numbArr[i];
-//  }
-// }
-//   console.log(min, max)
-// }
+{
+  let str = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
+  let max = 0;
+  let min = 0;
+  let numbArr = str.split(' ').map(el => +el);
+  for (let i = 0; i <= numbArr.length; i++) {
+ if (numbArr[i] > max) {
+   min = max;
+   max = numbArr[i];
+ } if (numbArr[i] < min) {
+   min = numbArr[i];
+ }
+}
+  console.log(min, max)
+}
 
 /*10. Дано произвольное целое число n. Написать программу, которая:
 a. разбивает число n на цифры и выводит их на экран;
