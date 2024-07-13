@@ -81,20 +81,40 @@
 общую сумму и среднее арифметическое введённых чисел. Если пользователь ввел не
 число, то вывести сообщение об ошибке */
 
+// {
+//   let symbol = +prompt("Введите число (кроме 0)");
+//   let sum = 0;
+//   let count = 0;
+//   if (isNaN(symbol) || symbol === 0) {
+//     alert("Ошибка!")
+//   }
+//   while (typeof symbol == "number" && symbol !== 0 && !isNaN(symbol)) {   
+//     sum += symbol;
+//     // console.log(symbol)
+//     symbol = +prompt("Введите число (кроме 0)");
+//      count++;
+//     // console.log(count);
+//   }
+//   let average = sum / count;
+//   console.log(sum, average);
+// }
+
+/*9. Дана строка с числами разделенными пробелами 
+«4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57».
+Найдите самое большое и самое маленькое число в строке, используя цикл. */
+
 {
-  let symbol = +prompt("Введите число (кроме 0)");
-  let sum = 0;
-  let count = 0;
-  if (isNaN(symbol) || symbol === 0) {
-    alert("Ошибка!")
-  }
-  while (typeof symbol == "number" && symbol !== 0 && !isNaN(symbol)) {   
-    sum += symbol;
-    // console.log(symbol)
-    symbol = +prompt("Введите число (кроме 0)");
-     count++;
-    // console.log(count);
-  }
-  let average = sum / count;
-  console.log(sum, average);
+  let str = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
+  let max = 0;
+  let min = 0;
+  let numbArr = str.split(' ').map(el => +el);
+  for (let i = 0; i <= numbArr.length; i++) {
+ if (numbArr[i] > max) {
+   min = max;
+   max = numbArr[i];
+ } if (numbArr[i] < min) {
+   min = numbArr[i];
+ }
+}
+  console.log(min, max)
 }
