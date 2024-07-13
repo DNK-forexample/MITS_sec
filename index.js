@@ -64,13 +64,37 @@
 меньше 50. Какое число получится? Посчитайте количество итераций, необходимых
 для этого (итерация - это проход цикла), и запишите его в переменную num. */
 
+// {
+//   let n = 1000;
+//   let num = 0;
+//   while (n > 50) {
+//     num++;
+//     n = n / 2;
+//     console.log(n);
+//   }
+//   console.log(num);
+// }
+
+
+/*8. Запустите цикл, в котором пользователю предлагается вводить число с клавиатуры, до
+тех пор, пока не будет введена пустая строка или 0. После выхода из цикла выведите
+общую сумму и среднее арифметическое введённых чисел. Если пользователь ввел не
+число, то вывести сообщение об ошибке */
+
 {
-  let n = 1000;
-  let num = 0;
-  while (n > 50) {
-    num++;
-    n = n / 2;
-    console.log(n);
+  let symbol = +prompt("Введите число (кроме 0)");
+  let sum = 0;
+  let count = 0;
+  if (isNaN(symbol) || symbol === 0) {
+    alert("Ошибка!")
   }
-  console.log(num);
+  while (typeof symbol == "number" && symbol !== 0 && !isNaN(symbol)) {   
+    sum += symbol;
+    // console.log(symbol)
+    symbol = +prompt("Введите число (кроме 0)");
+     count++;
+    // console.log(count);
+  }
+  let average = sum / count;
+  console.log(sum, average);
 }
