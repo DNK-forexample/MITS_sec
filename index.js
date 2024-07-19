@@ -2,9 +2,9 @@
 элементы на экран. */
 {
   let arr = [1, 2, 3, 4, 5];
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 }
 
 /*2. Дан массив с числами [-2, -1, -3, 15, 0, -4, 2, -5, 9, -15, 0, 4, 5, -6, 10, 7]. Числа могут
@@ -36,7 +36,22 @@ for (let i = 0; i < arr.length; i++) {
   let i = 23;
   while (i <= 57) {
     arr.push(i);
-    i++
+    i++;
   }
   console.log(arr);
+}
+
+/*5. Составьте массив дней недели (ПН, ВТ, СР и т.д.). С помощью цикла for выведите все
+дни недели, а выходные дни выведите жирным.
+*/
+
+{
+  let arr = ["ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ", "ВС"];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "СБ" || arr[i] === "ВС") {
+      document.write(`<b>${arr[i]}</b><br>`);
+    } else {
+      document.write(`${arr[i]} <br>`);
+    }
+  }
 }
