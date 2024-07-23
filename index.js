@@ -82,3 +82,16 @@
   let rev = arr.reverse();
   console.log(rev);
 }
+
+/*9. Напишите скрипт, считающий количество нулевых (пустых) элементов в заданном
+целочисленном массиве [5, 9, 21, , , 9, 78, , , , 6]. */
+{
+  let arr = [5, 9, 21, , , 9, 78, , , , 6];
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === 'undefined') {
+      count++;
+    }
+  }
+  console.log(count);
+}
