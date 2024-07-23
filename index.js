@@ -212,3 +212,24 @@ for (let i = 0; i < h; i++) {
   }
   console.log(arr);
 }
+
+/*7. Поменяйте местами максимальный и минимальных элементы в массиве. */
+{
+  let arr = [3, 9, 17, -1];
+  let min = arr[0];
+  let max = arr[0];
+  let minIndex;
+  let maxIndex;
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+      maxIndex = i;
+    } if (arr[i] < min) {
+      min = arr[i];
+      minIndex = i;
+    }
+  }
+  arr[minIndex] = max;
+  arr[maxIndex] = min;
+  console.log(arr);
+}
