@@ -158,3 +158,21 @@ for (let i = 0; i < h; i++) {
   }
   console.log(search, index);
 }
+
+/*3.Найдите максимальный и минимальный элементы массива. Выведите эти элементы и их сумму. */
+{
+  let arr = [0, 72, -12, 4, -4];
+  let min = arr[0];
+  let max = arr[0];
+  let sum;
+   for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+   }
+   sum = min + max;
+   console.log(sum);
+}
