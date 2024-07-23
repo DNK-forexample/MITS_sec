@@ -58,7 +58,27 @@
 
 /* 6. Создайте массив с произвольными данными. Добавьте в конец массива любой элемент,
 и получите последний элемент массива, используя свойство length.*/
+// {
+//   let arr = [[12, " ", , , , , , ,], 67, "true", "1", false];
+//   console.log(arr.[arr.length-1]);
+// }
+
+/*8. Переверните массив [12, false, ‘Текст’, 4, 2, -5, 0] (выведите в обратном порядке),
+используя цикл while и метод reverse. */
+
 {
-  let arr = [[12, " ", , , , , , ,], 67, "true", "1", false];
-  console.log(arr.[arr.length-1]);
+  let arr = [12, false, 'Текст', 4, 2, -5, 0];
+  let newArr = [];
+  let i = arr.length-1;
+  while(i > 0) {
+  newArr.push(arr[i])
+  i--;
+  }
+  console.log(newArr);
+}
+
+{
+  let arr = [12, false, 'Текст', 4, 2, -5, 0];
+  let rev = arr.reverse();
+  console.log(rev);
 }
