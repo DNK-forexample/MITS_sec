@@ -143,3 +143,18 @@ for (let i = 0; i < h; i++) {
 
   console.log(sum);
 }
+
+/*2.	Найти номер и значение первого найденного отрицательного элемента массива. */
+{
+  let arr = [0, 72, -12, 4, -4];
+  let search;
+  let index;
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      search = arr[i];
+      index = i;
+      break;
+    }
+  }
+  console.log(search, index);
+}
