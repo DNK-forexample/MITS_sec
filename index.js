@@ -233,3 +233,21 @@ for (let i = 0; i < h; i++) {
   arr[maxIndex] = min;
   console.log(arr);
 }
+
+/*8.	Посчитайте кол-во отрицательных, положительных элементов, а также  элементов со строчным типом данных. */
+ {
+  let arr = ['2', 0, 4, 7, -13, 13, -1, 'ty', 'sert'];
+  let minus = 0;
+  let plus = 0;
+  let str = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === 'string') {
+      str++;
+    } else if (arr[i] < 0) {
+      minus++;
+    } else {
+      plus++;
+    }
+  }
+  console.log(minus, plus, str);
+ }
