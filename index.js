@@ -55,11 +55,11 @@ function printArray(arr) {
   }
 }
 {
-let a = 3;
-let b = 10
+  let a = 3;
+  let b = 10;
 
-let arr = returnArray(a, b);
-printArray(arr);
+  let arr = returnArray(a, b);
+  printArray(arr);
 }
 
 /*5. Сделайте функцию isEven() (even - это четный), которая параметром
@@ -74,3 +74,19 @@ function isEven(num) {
   }
 }
 console.log(isEven(10));
+
+/*6. Напишите ф-цию, в которую передается массив с целыми числами.
+Верните новый массив, где останутся лежать только четные из этих чисел.
+Для этого используйте вспомогательную функцию isEven из предыдущей
+задачи. */
+
+function getEvenNumbers(arr) {
+  let evenArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (isEven(arr[i])) {
+      evenArr.push(arr[i]);
+    }
+  }
+  return evenArr;
+}
+console.log(getEvenNumbers([1, 4, 7, 3, 33, 12, 44]));
