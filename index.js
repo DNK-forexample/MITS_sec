@@ -35,3 +35,29 @@ function getMax(a, b) {
   }
 }
 console.log(getMax(-5, 4));
+
+/*4. Напишите две функции: первая ф-ция должна возвращать массив с
+числовыми значениями, диапазон которых должен вводиться пользователем
+с клавиатуры; вторая – выводить полученный массив. */
+
+function returnArray(from, to) {
+  let arr = [];
+  for (let i = from; i <= to; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+console.log(returnArray(3, 10));
+
+function printArray(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+{
+let a = 3;
+let b = 10
+
+let arr = returnArray(a, b);
+printArray(arr);
+}
