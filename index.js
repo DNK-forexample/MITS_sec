@@ -16,4 +16,22 @@ function getSquareOfNumber(number) {
 }
 console.log(getSquareOfNumber(3));
 
+/*3. Напишите функции min и max, которые возвращают меньшее и большее из
+чисел a и b. */
+function getMin(a, b) {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+console.log(getMin(-5, 4));
 
+function getMax(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+console.log(getMax(-5, 4));
